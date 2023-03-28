@@ -51,7 +51,7 @@
               <b><p class="card-text">$<%= producto.precio %></p></b>
               <form action="/carrito">
                 <input type="hidden" name="productId" value="<%= producto._id %>">
-                <input type="number" name="quantity" value="1" min="1" max="5">
+                <!-- <input type="number" name="quantity" value="1" min="1" max="5"> -->
                 <button class="btn btn-primary" type="submit">Add to Cart</button>
             </form>
           </ul>

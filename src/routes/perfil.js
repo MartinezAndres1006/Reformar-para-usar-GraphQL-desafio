@@ -9,4 +9,11 @@ perfil.get('/' , isAuth,(req,res)=>{
           res.render('perfil',{nombre,correo,edad,direccion,telefono,imagen})
     
     })
+
+
+
+    perfil.get('/perfiles',(req,res)=>{
+
+      
+    })
     export default perfil
