@@ -1,15 +1,15 @@
 
 import { Router } from "express";
 import passport from 'passport';
-const Registrorouter = Router();
+const registro = Router();
 
-Registrorouter.get('/registro', (req, res) => {
+registro.get('/', (req, res) => {
     res.render('registrarse');
 });
 
-Registrorouter.post('/registro', passport.authenticate('registro', {
+registro.post('/', passport.authenticate('registro', {
     successRedirect: '/login',
     failureRedirect: '/errorRegistro',
 }));
 
-export default Registrorouter
+export default registro

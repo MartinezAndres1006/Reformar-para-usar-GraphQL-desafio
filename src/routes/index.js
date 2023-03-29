@@ -8,7 +8,9 @@ import home from './home.js';
 import perfil from './perfil.js';
 import login from './login.js';
 import logout from './logout.js';
-import Registrorouter from './registro.js'
+import registro from './registro.js';
+
+
 
 router.use("/productos",productRouter)
 router.use("/carrito",carritosRouter)
@@ -16,7 +18,7 @@ router.use("/home",home)
 router.use("/perfil",perfil)
 router.use("/login",login)
 router.use("/logout",logout)
-router.get("/registro",Registrorouter)
+router.use("/registro",registro)
 log4js.configure({
     appenders:{
         consola: { type: "console" },
